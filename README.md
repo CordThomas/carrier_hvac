@@ -25,7 +25,7 @@ The code:
 
 The code relies on the existence of a params.py file located in the running users home directory (/home/pi in my case).  The strucutre in this case is:
 
-[HVAC]
+[HVAC]  
 \# Remote host IP - of course, carrier could change this any day - should maybe do source IP  
 bpf_filter = host 128.11.138.NN  
 \# Request display filter - in this case, the value between /systems/ and /status is the serial # of our thermostat.  Ours is 11 characters  
