@@ -26,19 +26,19 @@ The code:
 The code relies on the existence of a params.py file located in the running users home directory (/home/pi in my case).  The strucutre in this case is:
 
 [HVAC]
-\# Remote host IP - of course, carrier could change this any day - should maybe do source IP
-bpf_filter = host 128.11.138.NN
-\# Request display filter - in this case, the value between /systems/ and /status is the serial # of our thermostat.  Ours is 11 characters
-display_filter = http.request.uri contains "/systems/08.......96/status"
-\# Location of our sqlite3 DB
-db_location = /mnt/usb1/hvac/hvac.db
+\# Remote host IP - of course, carrier could change this any day - should maybe do source IP  
+bpf_filter = host 128.11.138.NN  
+\# Request display filter - in this case, the value between /systems/ and /status is the serial # of our thermostat.  Ours is 11 characters  
+display_filter = http.request.uri contains "/systems/08.......96/status"  
+\# Location of our sqlite3 DB  
+db_location = /mnt/usb1/hvac/hvac.db  
 
 Database structure is pretty self explanatory.  There's no real need to separate the date and time fields; i just do it out of convention.
 
-> CREATE TABLE `hvac` (
-> `tdate`TEXT,
-> `ttime`TEXT,
-> `param`TEXT,
-> `val`TEXT
+> CREATE TABLE `hvac` (  
+> `tdate`TEXT,  
+> `ttime`TEXT,  
+> `param`TEXT,  
+> `val`TEXT  
 > );
 
