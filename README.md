@@ -11,7 +11,7 @@ I relied on the following to get going:
 1. I had already set up a Raspbery Pi 3 as a bridge inline in my network between my switch and my Internet modem - here's a recipe for doing this:  https://techknight.eu/2015/01/02/setup-wired-network-bridge-raspberry-pi-debianlinux/
 2. I found this Python package for capturing packets in XML format:  https://github.com/KimiNewt/pyshark
 3. I wrote a script to parse the results and write the data to a sqlite3 database
-4. Setup the script to run as a service following this https://gist.github.com/connorjan/01f995511cfd0fee1cfae2387024b54a
+4. Setup the script to run as a service following this https://gist.github.com/connorjan/01f995511cfd0fee1cfae2387024b54a and https://isotope11.com/blog/manage-your-services-with-daemontools
 
 Next steps:
 
